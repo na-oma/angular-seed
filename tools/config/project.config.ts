@@ -46,7 +46,10 @@ export class ProjectConfig extends SeedConfig {
     let additionalPackages: ExtendPackages[] = [{
         name: 'angular2-jwt',
         // Path to the package's bundle
-        path: 'node_modules/angular2-jwt/angular2-jwt.js'
+        path: 'node_modules/angular2-jwt/',
+        packageMeta: {
+            defaultExtension: 'js',
+        },
     }];
 
     this.addPackagesBundles(additionalPackages);
